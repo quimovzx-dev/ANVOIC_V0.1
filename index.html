@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>JanVoice - One District. One Voice.</title>
+
+  <meta
+    name="description"
+    content="A district-level platform where citizens share problems, ideas and polls."
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="background-blur blur1"></div>
+  <div class="background-blur blur2"></div>
+
+  <header class="hero">
+
+    <div class="hero-content">
+
+      <span class="badge">
+        🚀 Civic Intelligence Platform
+      </span>
+
+      <h1>
+        JanVoice
+      </h1>
+
+      <p class="tagline">
+        One District. One Voice.
+      </p>
+
+      <p class="hero-description">
+        Transform community concerns into collective action.
+        Report problems, share ideas, support initiatives,
+        and identify what truly matters in your district.
+      </p>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <section class="dashboard">
+
+      <div class="stat-card">
+        <h2 id="totalPosts">0</h2>
+        <p>Total Posts</p>
+      </div>
+
+      <div class="stat-card">
+        <h2 id="totalSupporters">0</h2>
+        <p>Supports</p>
+      </div>
+
+      <div class="stat-card">
+        <h2>1</h2>
+        <p>District</p>
+      </div>
+
+    </section>
+
+    <section class="create-section glass">
+
+      <h2>Create Community Signal</h2>
+
+      <div class="input-group">
+
+        <select id="postType">
+
+          <option value="problem">
+            🚨 Problem
+          </option>
+
+          <option value="idea">
+            💡 Idea
+          </option>
+
+          <option value="poll">
+            🗳 Poll
+          </option>
+
+        </select>
+
+        <input
+          type="text"
+          id="title"
+          placeholder="Title"
+        />
+
+        <input
+          type="text"
+          id="area"
+          placeholder="Area / Village / Ward"
+        />
+
+        <textarea
+          id="description"
+          placeholder="Describe the issue, idea or poll..."
+        ></textarea>
+
+        <button id="createBtn">
+          Publish
+        </button>
+
+      </div>
+
+    </section>
+
+    <section class="feed-header">
+
+      <h2>
+        🔥 Trending Community Feed
+      </h2>
+
+      <div class="filters">
+
+        <button class="filter active" data-filter="all">
+          All
+        </button>
+
+        <button class="filter" data-filter="problem">
+          Problems
+        </button>
+
+        <button class="filter" data-filter="idea">
+          Ideas
+        </button>
+
+        <button class="filter" data-filter="poll">
+          Polls
+        </button>
+
+      </div>
+
+    </section>
+
+    <section
+      id="feed"
+      class="feed"
+    >
+    </section>
+
+  </main>
+
+  <footer>
+
+    <p>
+      JanVoice v0.1 • Community Powered
+    </p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
